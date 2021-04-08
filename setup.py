@@ -16,4 +16,4 @@ setup(name='numpy-linreg',
           'numpy>=1.18.*',
           'numba>=0.48.*'],
       python_requires='>=3.6',
-      zip_safe=False)
+      zip_safe=True)
