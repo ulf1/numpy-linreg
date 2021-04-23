@@ -19,11 +19,10 @@ setup(name='numpy-linreg',
       url='http://github.com/ulf1/numpy-linreg',
       author='Ulf Hamster',
       author_email='554c46@gmail.com',
-      license='MIT',
+      license='Apache License 2.0',
       packages=['numpy_linreg'],
       install_requires=[
-          'setuptools>=40.0.0',
           'numpy>=1.18.*,<2',
           'numba>=0.48.*'],
       python_requires='>=3.6',
-      zip_safe=True)
+      zip_safe=False)
