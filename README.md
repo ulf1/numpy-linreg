@@ -1,4 +1,6 @@
 [![PyPI version](https://badge.fury.io/py/numpy-linreg.svg)](https://badge.fury.io/py/numpy-linreg)
+[![numpy-linreg](https://snyk.io/advisor/python/numpy-linreg/badge.svg)](https://snyk.io/advisor/python/numpy-linreg)
+
 
 # numpy-linreg
 Linear Regression with numpy only.
