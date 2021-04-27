@@ -1,4 +1,8 @@
 [![PyPI version](https://badge.fury.io/py/numpy-linreg.svg)](https://badge.fury.io/py/numpy-linreg)
+[![numpy-linreg](https://snyk.io/advisor/python/numpy-linreg/badge.svg)](https://snyk.io/advisor/python/numpy-linreg)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/ulf1/numpy-linreg.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ulf1/numpy-linreg/alerts/)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/ulf1/numpy-linreg.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ulf1/numpy-linreg/context:python)
+[![deepcode](https://www.deepcode.ai/api/gh/badge?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybTEiOiJnaCIsIm93bmVyMSI6InVsZjEiLCJyZXBvMSI6Im51bXB5LWxpbnJlZyIsImluY2x1ZGVMaW50IjpmYWxzZSwiYXV0aG9ySWQiOjI5NDUyLCJpYXQiOjE2MTk1NDAzMDZ9.edO77WsHsnY9tPe9cajcO_xDc6JX9Nt9etM0GHshJbY)](https://www.deepcode.ai/app/gh/ulf1/numpy-linreg/_/dashboard?utm_content=gh%2Fulf1%2Fnumpy-linreg)
 
 # numpy-linreg
 Linear Regression with numpy only.
@@ -56,7 +60,14 @@ pip3 install -r requirements-demo.txt
 
 * Jupyter for the examples: `jupyter lab`
 * Check syntax: `flake8 --ignore=F401 --exclude=$(grep -v '^#' .gitignore | xargs | sed -e 's/ /,/g')`
-* Upload to PyPi with twine: `python setup.py sdist && twine upload -r pypi dist/*`
+
+Publish
+
+```sh
+pandoc README.md --from markdown --to rst -s -o README.rst
+python setup.py sdist 
+twine upload -r pypi dist/*
+```
 
 ### Clean up 
 
